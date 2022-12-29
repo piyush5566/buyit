@@ -3,6 +3,7 @@ import axios from 'axios';
 import logger from 'use-reducer-logger';
 import { Col, Row } from 'react-bootstrap';
 import Product from '../components/Product';
+import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -19,6 +20,7 @@ const reducer = (state, action) => {
 
 export default function HomeScreen() {
   const [{ loading, error, products }, dispatch] = useReducer(logger(reducer), {
+    products: [],
     loading: true,
     error: '',
   });
@@ -37,6 +39,9 @@ export default function HomeScreen() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>Buyit</title>
+      </Helmet>
       <h1>Featured Products</h1>
       <div className="products">
         {loading ? (
