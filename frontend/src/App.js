@@ -12,7 +12,7 @@ export default function App() {
           <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>amazona</Navbar.Brand>
+                <Navbar.Brand>buyit</Navbar.Brand>
               </LinkContainer>
             </Container>
           </Navbar>

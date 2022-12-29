@@ -34,3 +34,16 @@ main {
   width: 100%;
   max-width: 400px;
 }
+
+.rating span {
+  color: #ffc000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #f0c040;
+  color: #000000;
+}
